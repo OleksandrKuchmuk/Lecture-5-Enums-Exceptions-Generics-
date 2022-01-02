@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Login extends Authentication {
     char[] login;
 
-    @Override
+
     public void input() {
         System.out.print("Input your login");
 //        System.out.print("\n(Must consist of letters 'A-Z', letters 'a-z' and a symbol '_'): ");

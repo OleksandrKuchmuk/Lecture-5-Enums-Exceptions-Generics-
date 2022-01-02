@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Validation {
 
-//    char tmp;
-    char [] password;
+    //    char tmp;
+    char[] password;
     char[] confirmPassword;
-    char [] checkList;
+    char[] checkList;
     char[] arrayMakesFromLine;
 
     public Validation(char[] password, char[] confirmPassword, char[] checkList, char[] arrayMakesFromLine) {
@@ -46,24 +46,17 @@ public class Validation {
             System.out.println("Ви ввели забагато символів");
         }
     }
-//    int count1 = 0;
-//    public void validPasswordConfirmation(){
-//        Arrays.equals(password, confirmPassword);
-//        if(true){
-//            System.out.println("Пароль нормальний");
-//        }else {
-//            System.out.println("Пароль не співпадає");
-//        }
-//        System.out.println(Arrays.equals(password, confirmPassword));
-//        for (int i=0; i< password.length; i++){
-//            for (int j=0; j<confirmPassword.length; j++){
-//                if (password[i] == confirmPassword[j]){
-//
-//                }
-//            }System.out.println("Confirmation password is Wrong");
-//        }
-    }
 
+    public void validPasswordConfirmation() {
+       boolean liquid =  Arrays.equals(password, confirmPassword);
+        if(liquid == true){
+            System.out.println("Пароль нормальний");
+        }else {
+            System.out.println("Пароль не співпадає");
+        }
+    }
 }
+
+
 
 

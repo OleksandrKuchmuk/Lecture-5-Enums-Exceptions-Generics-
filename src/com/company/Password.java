@@ -7,14 +7,14 @@ public class Password extends Authentication{
 
 
 
-    @Override
+
     public void input() {
         System.out.print("Input your password");
         super.input();
         this.password = super.arrayMakesFromLine;
         System.out.println(Arrays.toString(password));}
 
-        @Override
+
         public String toString() {
             return "Password{" +
                     "password=" + Arrays.toString(password) +
